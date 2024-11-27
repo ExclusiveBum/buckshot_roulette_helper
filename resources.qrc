@@ -1,0 +1,18 @@
+<RCC>
+    <qresource prefix="/">
+        <file>App.qml</file>
+        <file>Screen01.ui.qml</file>
+        <file>Screen02.ui.qml</file>
+        <file>Resources/shell_icon.png</file>
+        <file>Resources/next_round.png</file>
+        <file>Resources/shell_icon.ico</file>
+        <file>Resources/blank_shell.png</file>
+        <file>Resources/check_icon.png</file>
+        <file>Resources/check_icon_dark.png</file>
+        <file>Resources/no_shell.png</file>
+        <file>Resources/next_round_dark.png</file>
+        <file>Resources/live_shell.png</file>
+        <file>fonts/whitrabt.ttf</file>
+        <file>fonts/AveriaSerifLibre-Regular.ttf</file>
+    </qresource>
+</RCC>
