@@ -3,11 +3,16 @@
 #include <QGuiApplication>
 #include <QString>
 #include <QVariantMap>
-#include "controller.cpp"
+#include "controller.h"
 
-int live;
-int blank;
-
+int live = 0;
+int blank = 0;
+std::string shells[4][10] = {
+    {"ns","ns","ns","ns","ns","ns","ns","ns","ns","ns"},
+    {"ns","ns","ns","ns","ns","ns","ns","ns","ns","ns"},
+    {"ns","ns","ns","ns","ns","ns","ns","ns","ns","ns"},
+    {"ns","ns","ns","ns","ns","ns","ns","ns","ns","ns"}
+};
 
 int main(int argc, char *argv[])
 {
@@ -18,8 +23,8 @@ int main(int argc, char *argv[])
     QQmlApplicationEngine engine;
     Controller controller;
 
-    engine.rootContext()->setContextProperty("controller", &controller);
-    qDebug() << "Controller zarejestrowany w kontekście";
+    engine.rootContext()->setContextProperty("controllerx", &controller);
+    qDebug() << shells[0][0];
 
     // Ładowanie pliku QML
     const QUrl url(QStringLiteral("qrc:/App.qml"));
@@ -35,4 +40,3 @@ int main(int argc, char *argv[])
     return app.exec();
 }
 
-#include "main.moc"

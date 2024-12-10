@@ -1,0 +1,87 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "Buckshot_Roulette_Helper",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "Buckshot_Roulette_Helper::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Buckshot_Roulette_Helper-Debug-0141fd2797bb0b338b35.json",
+					"name" : "Buckshot_Roulette_Helper",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Buckshot_Roulette_Helper_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Buckshot_Roulette_Helper_autogen-Debug-7a3121b32718cb9e5e12.json",
+					"name" : "Buckshot_Roulette_Helper_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Buckshot_Roulette_Helper_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Buckshot_Roulette_Helper_autogen_timestamp_deps-Debug-af8a6c44b8850940708a.json",
+					"name" : "Buckshot_Roulette_Helper_autogen_timestamp_deps",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Buckshot_Roulette_Helper_qmlimportscan::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Buckshot_Roulette_Helper_qmlimportscan-Debug-4148bae0f92fb94c1f44.json",
+					"name" : "Buckshot_Roulette_Helper_qmlimportscan",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/ergaxyn/Dokumenty/GitHub/buckshot_roulette_helper/build/Desktop_Qt_6_8_0-Debug",
+		"source" : "/home/ergaxyn/Dokumenty/GitHub/buckshot_roulette_helper"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 7
+	}
+}

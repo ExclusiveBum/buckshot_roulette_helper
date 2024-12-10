@@ -1,0 +1,2 @@
+set(__QT_DEPLOY_TARGET_Buckshot_Roulette_Helper_FILE /home/ergaxyn/Dokumenty/GitHub/buckshot_roulette_helper/build/Desktop_Qt_6_8_0-Debug/Buckshot_Roulette_Helper)
+set(__QT_DEPLOY_TARGET_Buckshot_Roulette_Helper_TYPE EXECUTABLE)

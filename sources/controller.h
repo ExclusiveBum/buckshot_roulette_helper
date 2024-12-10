@@ -7,10 +7,14 @@ class Controller : public QObject
 {
     Q_OBJECT
 public:
-    void updateValues(const QVariantMap &newValues);
+    Q_INVOKABLE void updateValues(const QVariantMap &newValues);
+    Q_INVOKABLE void setShells();
+    int live;
+    int blank;
+
 
 signals:
-    void valuesChanged();
+    void updateValues();
 };
 
 #endif // CONTROLLER_H

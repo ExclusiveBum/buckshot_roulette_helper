@@ -1,0 +1,38 @@
+{
+	"BUILD_DIR" : "/home/ergaxyn/Dokumenty/GitHub/buckshot_roulette_helper/build/Desktop_Qt_6_8_0-Debug/Buckshot_Roulette_Helper_autogen",
+	"CMAKE_BINARY_DIR" : "/home/ergaxyn/Dokumenty/GitHub/buckshot_roulette_helper/build/Desktop_Qt_6_8_0-Debug",
+	"CMAKE_CURRENT_BINARY_DIR" : "/home/ergaxyn/Dokumenty/GitHub/buckshot_roulette_helper/build/Desktop_Qt_6_8_0-Debug",
+	"CMAKE_CURRENT_SOURCE_DIR" : "/home/ergaxyn/Dokumenty/GitHub/buckshot_roulette_helper",
+	"CMAKE_SOURCE_DIR" : "/home/ergaxyn/Dokumenty/GitHub/buckshot_roulette_helper",
+	"CROSS_CONFIG" : false,
+	"GENERATOR" : "Ninja",
+	"INCLUDE_DIR" : "/home/ergaxyn/Dokumenty/GitHub/buckshot_roulette_helper/build/Desktop_Qt_6_8_0-Debug/Buckshot_Roulette_Helper_autogen/include",
+	"INPUTS" : 
+	[
+		"/home/ergaxyn/Dokumenty/GitHub/buckshot_roulette_helper/Screen02.ui.qml",
+		"/home/ergaxyn/Dokumenty/GitHub/buckshot_roulette_helper/App.qml",
+		"/home/ergaxyn/Dokumenty/GitHub/buckshot_roulette_helper/Screen01.ui.qml",
+		"/home/ergaxyn/Dokumenty/GitHub/buckshot_roulette_helper/Resources/no_shell.png",
+		"/home/ergaxyn/Dokumenty/GitHub/buckshot_roulette_helper/Resources/shell_icon.ico",
+		"/home/ergaxyn/Dokumenty/GitHub/buckshot_roulette_helper/Resources/check_icon_dark.png",
+		"/home/ergaxyn/Dokumenty/GitHub/buckshot_roulette_helper/Resources/check_icon.png",
+		"/home/ergaxyn/Dokumenty/GitHub/buckshot_roulette_helper/Resources/blank_shell.png",
+		"/home/ergaxyn/Dokumenty/GitHub/buckshot_roulette_helper/Resources/next_round.png",
+		"/home/ergaxyn/Dokumenty/GitHub/buckshot_roulette_helper/Resources/shell_icon.png",
+		"/home/ergaxyn/Dokumenty/GitHub/buckshot_roulette_helper/Resources/next_round_dark.png",
+		"/home/ergaxyn/Dokumenty/GitHub/buckshot_roulette_helper/Resources/live_shell.png",
+		"/home/ergaxyn/Dokumenty/GitHub/buckshot_roulette_helper/fonts/whitrabt.ttf",
+		"/home/ergaxyn/Dokumenty/GitHub/buckshot_roulette_helper/fonts/AveriaSerifLibre-Regular.ttf"
+	],
+	"LOCK_FILE" : "/home/ergaxyn/Dokumenty/GitHub/buckshot_roulette_helper/build/Desktop_Qt_6_8_0-Debug/CMakeFiles/Buckshot_Roulette_Helper_autogen.dir/AutoRcc_resources_EWIEGA46WW_Lock.lock",
+	"MULTI_CONFIG" : false,
+	"OPTIONS" : [ "-name", "resources" ],
+	"OUTPUT_CHECKSUM" : "EWIEGA46WW",
+	"OUTPUT_NAME" : "qrc_resources.cpp",
+	"RCC_EXECUTABLE" : "/home/ergaxyn/Qt/6.8.0/gcc_64/libexec/rcc",
+	"RCC_LIST_OPTIONS" : [ "--list" ],
+	"SETTINGS_FILE" : "/home/ergaxyn/Dokumenty/GitHub/buckshot_roulette_helper/build/Desktop_Qt_6_8_0-Debug/CMakeFiles/Buckshot_Roulette_Helper_autogen.dir/AutoRcc_resources_EWIEGA46WW_Used.txt",
+	"SOURCE" : "/home/ergaxyn/Dokumenty/GitHub/buckshot_roulette_helper/resources.qrc",
+	"USE_BETTER_GRAPH" : true,
+	"VERBOSITY" : 0
+}
