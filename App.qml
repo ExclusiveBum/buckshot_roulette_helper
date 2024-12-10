@@ -3,6 +3,8 @@
 
 import QtQuick
 
+pragma ComponentBehavior: Unbound
+
 Window {
     id: app
     width: 1920
@@ -12,7 +14,7 @@ Window {
     title: "Buckshot_Roulette_Helper"
     property real scaleW: 1
     // Zdefiniowanie właściwości controller w App.qml
-    property var controller: controller
+    property var controller: controllerx
 
     onWidthChanged: {
         height = width * (9 / 16);
@@ -30,8 +32,8 @@ Window {
         source: "Screen01.ui.qml"
         onLoaded: {
             console.log("Czy controller jest zarejestrowany globalnie?", typeof controller);
-            console.log("Controller:", app.controller);
-              // Logowanie controller w App.qml
+            console.log("Controller:", controller);
+            // Logowanie controller w App.qml
             screenLoader.item.appProp = app;
         }
     }

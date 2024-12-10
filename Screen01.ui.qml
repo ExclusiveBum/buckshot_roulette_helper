@@ -61,7 +61,6 @@ Rectangle {
                 TextInput {
                     id: liveInput
                     color: "#00ff00"
-                    text: qsTr("10")
                     anchors.fill: parent
                     font.pixelSize: 250
                     horizontalAlignment: Text.AlignHCenter
@@ -81,7 +80,7 @@ Rectangle {
                 id: warning
                 width: 278
                 height: 140
-                opacity: 1
+                opacity: 0
                 visible: true
                 color: "#ffffff"
                 text: qsTr("There can't be only 1 type of shells.")
@@ -109,7 +108,6 @@ Rectangle {
                 TextInput {
                     id: blankInput
                     color: "#00ff00"
-                    text: qsTr("10")
                     anchors.fill: parent
                     font.pixelSize: 250
                     horizontalAlignment: Text.AlignHCenter
@@ -163,6 +161,7 @@ Rectangle {
                 Connections {
                     target: mouseArea
                     function onClicked() {
+                        console.log("XXX")
                         console.log("Controller dostępny:",
                                     mainScene.appProp.controller)
 
