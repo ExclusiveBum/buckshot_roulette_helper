@@ -160,21 +160,64 @@ Rectangle {
 
                 Connections {
                     target: mouseArea
-                    function onClicked() {
-                        console.log("XXX")
-                        console.log("Controller dostępny:",
-                                    mainScene.appProp.controller)
+                    function onClicked()
+                    {
+                        console.log("Controller dostępny:", mainScene.appProp.controller)
 
                         var map = {
-                            "liveS": liveInput.text,
-                            "blankS": blankInput.text
+                            "liveS": parseInt(liveInput.text),
+                            "blankS": parseInt(blankInput.text)
                         }
-                        mainScene.appProp.switchToScreen("Screen02.ui.qml")
-                        if (mainScene.appProp && mainScene.appProp.controller) {
-                            mainScene.appProp.controller.updateValues(map)
-                            console.log("Clicked: Switching to screen02")
-                            mainScene.appProp.switchToScreen("Screen02.ui.qml")
-                        } else {
+                        // mainScene.appProp.switchToScreen("Screen02.ui.qml")
+                        if (mainScene.appProp && mainScene.appProp.controller)
+                        {
+                            var result = mainScene.appProp.controller.setValues(map)
+
+                            switch(result)
+                            {
+                                case 0:
+                                {
+                                    warning.opacity = 0
+                                    console.log("Clicked: Switching to screen02")
+                                    mainScene.appProp.switchToScreen("Screen02.ui.qml")
+                                    break
+                                }
+                                case 1:
+                                {
+                                    warning.opacity = 1
+                                    warning.text = "There can't be only one type of shells"
+                                    break
+                                }
+                                case 2:
+                                {
+                                    warning.opacity = 1
+                                    warning.text = "There must be maximum of 10 shells"
+                                    break
+                                }
+                                case 3:
+                                {
+                                    warning.opacity = 1
+                                    warning.text = "There must be minimum of 2 shells"
+                                    break
+                                }
+                                case 4:
+                                {
+                                    warning.opacity = 1
+                                    warning.text = "There can't be no shells"
+                                    break
+                                }
+                                case 5:
+                                {
+                                    warning.opacity = 1
+                                    warning.text = "You need to enter the all numbers"
+                                    break
+                                }
+                            }
+                        }
+                        else
+                        {
+                            warning.opacity = 1
+                            warning.text = "Controller lub appProp jest niezdefiniowane!"
                             console.log("Controller lub appProp jest niezdefiniowane!")
                         }
                     }

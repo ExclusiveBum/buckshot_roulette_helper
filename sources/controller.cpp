@@ -5,7 +5,7 @@ extern int live;
 extern int blank;
 extern std::string shells[][10];
 
-void Controller::updateValues(const QVariantMap &newValues)
+int Controller::setValues(const QVariantMap &newValues)
 {
     QString liveS = newValues["liveS"].toString();
     QString blankS = newValues["blankS"].toString();
@@ -48,30 +48,36 @@ void Controller::updateValues(const QVariantMap &newValues)
                     if((live==0 && blank>1) || (live>1 && blank==0))
                     {
                         qDebug() << "There can't be only one type of shells";
+                        return 1;
                     }
                     else
                     {
                         setShells();
+                        return 0;
                     }
                 }
                 else
                 {
                     qDebug() << "There must be maximum of 10 shells";
+                    return 2;
                 }
             }
             else
             {
                 qDebug() << "There must be minimum of 2 shells";
+                return 3;
             }
         }
         else
         {
             qDebug() << "There can't be no shells";
+            return 4;
         }
     }
     else
     {
         qDebug() << "You need to enter the all numbers";
+        return 5;
     }
 
 }
@@ -88,10 +94,10 @@ void Controller::setShells()
     }
     for (int i=0; i<4; i++)
     {
-        for (int j=0; j<10; i++)
+        for (int j=0; j<10; j++)
         {
-            printf("%s", shells[i][j]);
+            printf("%s ", shells[i][j].c_str());
         }
-        printf('%c', '\n');
+        printf("%c", '\n');
     }
 }

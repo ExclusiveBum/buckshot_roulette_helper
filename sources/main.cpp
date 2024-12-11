@@ -24,7 +24,6 @@ int main(int argc, char *argv[])
     Controller controller;
 
     engine.rootContext()->setContextProperty("controllerx", &controller);
-    qDebug() << shells[0][0];
 
     // Ładowanie pliku QML
     const QUrl url(QStringLiteral("qrc:/App.qml"));

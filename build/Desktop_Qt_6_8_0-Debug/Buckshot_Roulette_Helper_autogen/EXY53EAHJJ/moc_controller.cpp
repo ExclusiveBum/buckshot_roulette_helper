@@ -36,7 +36,7 @@ namespace {
 struct qt_meta_stringdata_CLASSControllerENDCLASS_t {};
 constexpr auto qt_meta_stringdata_CLASSControllerENDCLASS = QtMocHelpers::stringData(
     "Controller",
-    "updateValues",
+    "setValues",
     "",
     "QVariantMap",
     "newValues",
@@ -68,10 +68,10 @@ Q_CONSTINIT static const uint qt_meta_data_CLASSControllerENDCLASS[] = {
        5,    0,   36,    2, 0x02,    4 /* Public */,
 
  // signals: parameters
-    QMetaType::Void,
+    QMetaType::Int,
 
  // methods: parameters
-    QMetaType::Void, 0x80000000 | 3,    4,
+    QMetaType::Int, 0x80000000 | 3,    4,
     QMetaType::Void,
 
        0        // eod
@@ -86,10 +86,10 @@ Q_CONSTINIT const QMetaObject Controller::staticMetaObject = { {
     qt_incomplete_metaTypeArray<qt_meta_stringdata_CLASSControllerENDCLASS_t,
         // Q_OBJECT / Q_GADGET
         QtPrivate::TypeAndForceComplete<Controller, std::true_type>,
-        // method 'updateValues'
-        QtPrivate::TypeAndForceComplete<void, std::false_type>,
-        // method 'updateValues'
-        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        // method 'setValues'
+        QtPrivate::TypeAndForceComplete<int, std::false_type>,
+        // method 'setValues'
+        QtPrivate::TypeAndForceComplete<int, std::false_type>,
         QtPrivate::TypeAndForceComplete<const QVariantMap &, std::false_type>,
         // method 'setShells'
         QtPrivate::TypeAndForceComplete<void, std::false_type>
@@ -103,16 +103,18 @@ void Controller::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, 
         auto *_t = static_cast<Controller *>(_o);
         (void)_t;
         switch (_id) {
-        case 0: _t->updateValues(); break;
-        case 1: _t->updateValues((*reinterpret_cast< std::add_pointer_t<QVariantMap>>(_a[1]))); break;
+        case 0: { int _r = _t->setValues();
+            if (_a[0]) *reinterpret_cast< int*>(_a[0]) = std::move(_r); }  break;
+        case 1: { int _r = _t->setValues((*reinterpret_cast< std::add_pointer_t<QVariantMap>>(_a[1])));
+            if (_a[0]) *reinterpret_cast< int*>(_a[0]) = std::move(_r); }  break;
         case 2: _t->setShells(); break;
         default: ;
         }
     } else if (_c == QMetaObject::IndexOfMethod) {
         int *result = reinterpret_cast<int *>(_a[0]);
         {
-            using _t = void (Controller::*)();
-            if (_t _q_method = &Controller::updateValues; *reinterpret_cast<_t *>(_a[1]) == _q_method) {
+            using _t = int (Controller::*)();
+            if (_t _q_method = &Controller::setValues; *reinterpret_cast<_t *>(_a[1]) == _q_method) {
                 *result = 0;
                 return;
             }
@@ -151,8 +153,11 @@ int Controller::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
 }
 
 // SIGNAL 0
-void Controller::updateValues()
+int Controller::setValues()
 {
-    QMetaObject::activate(this, &staticMetaObject, 0, nullptr);
+    int _t0{};
+    void *_a[] = { const_cast<void*>(reinterpret_cast<const void*>(std::addressof(_t0))) };
+    QMetaObject::activate(this, &staticMetaObject, 0, _a);
+    return _t0;
 }
 QT_WARNING_POP
